@@ -2,7 +2,7 @@ class Vehikl < Formula
   desc "Shell function for Vehikl"
   homepage "https://github.com/schmosbyy/homebrew-vehikl"
   url "https://github.com/schmosbyy/homebrew-vehikl/archive/refs/tags/v1.0.tar.gz"
-  sha256 "cbf17d27b4333b69ff65a373ae4ac45cb1b346b8e0821dbccdb30ad4e16f0b9a"
+  sha256 "b9c1020681396a8cd104bcd3e17bbb12caa2a10f83a88a8667ec60b625528ad6"
   version "1.0"
 
   def install
