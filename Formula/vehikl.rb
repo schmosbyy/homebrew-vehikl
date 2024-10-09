@@ -19,9 +19,6 @@ class Vehikl < Formula
   
       \e[34mecho 'source #{opt_bin}/vehikl' >> ~/.bashrc || echo 'source #{opt_bin}/vehikl' >> ~/.zshrc\e[0m
   
-      Afterward, reload your shell configuration by running:
-  
-      \e[34msource ~/.bashrc or source ~/.zshrc\e[0m
       \n\n
   EOS
   end
