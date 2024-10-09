@@ -6,14 +6,14 @@ class Vehikl < Formula
   version "1.0"
 
   def install
-    bin.install "vehikl.sh"
+    bin.install "Formula/vehikl.sh" => "vehikl"
   end
 
   def caveats
-    <<~EOS
-      To load the vehikl shell function in your terminal, add the following line to your ~/.bashrc or ~/.zshrc:
+      <<~EOS
+        To use the vehikl function, add the following line to your shell configuration file:
 
-        source $(brew --prefix vehikl)/vehikl.sh
-    EOS
+        echo 'source #{opt_bin}/vehikl' >> ~/.bashrc || echo 'source #{opt_bin}/vehikl' >> ~/.zshrc
+      EOS
   end
 end
