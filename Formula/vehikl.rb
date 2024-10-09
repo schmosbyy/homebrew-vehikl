@@ -18,7 +18,10 @@ class Vehikl < Formula
       To use the vehikl function, add the following line to your shell configuration file:
   
       \e[34mecho 'source #{opt_bin}/vehikl' >> ~/.bashrc || echo 'source #{opt_bin}/vehikl' >> ~/.zshrc\e[0m
+
+      Start exploring it by running :
   
+      \e[34m vehikl --help \e[0m
       \n\n
   EOS
   end
