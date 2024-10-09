@@ -6,18 +6,30 @@ class Vehikl < Formula
   version "1.0"
 
   def install
-    # Set environment variables
-    ENV["HOMEBREW_NO_INSTALL_CLEANUP"] = "1"
-    ENV["HOMEBREW_NO_ENV_HINTS"] = "1"
-    bin.install "Formula/vehikl.sh" => "vehikl"
-    system "chmod", "+x", "#{bin}/vehikl"
+    ohai "Installing vehikl..."
+      
+      # Redirect Homebrew system output for the duration of this formula
+      @old_verbose, Homebrew.verbose = Homebrew.verbose, false
+
+      # Your installation steps
+      bin.install "Formula/vehikl.sh" => "vehikl"
+      system "chmod", "+x", "#{bin}/vehikl"
+
+      # Restore verbosity after installation
+      Homebrew.verbose = @old_verbose
   end
 
   def caveats
       <<~EOS
-        To use the vehikl function, add the following line to your shell configuration file:
-
-        echo 'source #{opt_bin}/vehikl' >> ~/.bashrc || echo 'source #{opt_bin}/vehikl' >> ~/.zshrc
-      EOS
+      \e[32m🚀 SUCCESS! The Vehikl shell function has been installed.\e[0m
+  
+      To use the vehikl function, add the following line to your shell configuration file:
+  
+      \e[34mecho 'source #{opt_bin}/vehikl' >> ~/.bashrc || echo 'source #{opt_bin}/vehikl' >> ~/.zshrc\e[0m
+  
+      Afterward, reload your shell configuration by running:
+  
+      \e[34msource ~/.bashrc or source ~/.zshrc\e[0m
+  EOS
   end
 end
