@@ -7,8 +7,7 @@ class Vehikl < Formula
 
   def install
       bin.install "Formula/vehikl.sh" => "vehikl"
-      system "chmod", "+x", "#{bin}/vehikl", out: :close
-      ohai "vehikl installed successfully."
+      system "chmod", "+x", "#{bin}/vehikl"
   end
 
   def caveats
