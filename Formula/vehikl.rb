@@ -6,6 +6,9 @@ class Vehikl < Formula
   version "1.0"
 
   def install
+    # Set environment variables
+      ENV["HOMEBREW_NO_INSTALL_CLEANUP"] = "1"
+      ENV["HOMEBREW_NO_ENV_HINTS"] = "1"
     bin.install "Formula/vehikl.sh" => "vehikl"
   end
 
