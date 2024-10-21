@@ -6,7 +6,7 @@ class Vehikl < Formula
   version "1.0"
 
   def install
-      bin.install "Formula/vehikl.sh" => "vehikl"
+      bin.install "vehikl.sh" => "vehikl"
       system "chmod", "+x", "#{bin}/vehikl"
   end
 
