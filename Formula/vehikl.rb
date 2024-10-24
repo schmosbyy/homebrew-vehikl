@@ -21,7 +21,7 @@ class Vehikl < Formula
       
       OR
       
-      \e[34echo 'source #{opt_bin}/vehikl' >> ~/.zshrc\e[0m
+      \e[34mecho 'source #{opt_bin}/vehikl' >> ~/.zshrc\e[0m
       
       Start exploring it by running :
   
