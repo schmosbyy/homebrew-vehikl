@@ -1,4 +1,4 @@
-class VehiklFunction < Formula
+class Vehikl < Formula
   desc "Shell function for Vehikl"
   homepage "https://github.com/schmosbyy/homebrew-vehikl"
   url "https://github.com/schmosbyy/homebrew-vehikl/archive/refs/tags/v1.0.tar.gz"
@@ -6,7 +6,7 @@ class VehiklFunction < Formula
   version "1.0"
 
   def install
-      bin.install "vehikl.sh" => "vehikl"
+      bin.install "Forumla/vehikl.sh" => "vehikl"
       system "chmod", "+x", "#{bin}/vehikl"
   end
 
