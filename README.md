@@ -6,35 +6,56 @@ The `vehikl` shell function automates project creation and setup for popular fra
 ## Installation
 You can install the `vehikl` function via Homebrew:
 
-`brew tap schmosbyy/vehikl`
+```bash
+brew tap schmosbyy/vehikl
+brew install schmosbyy/vehikl/vehikl
+```
 
-`brew install schmosbyy/vehikl/vehikl`
+### Upgrading to a Newer Version
+If you already have `v1.0` installed, you can upgrade to the latest version by running:
+
+```bash
+brew update && brew upgrade vehikl
+```
 
 ## Usage
 
 To use the `vehikl` function, run:
 
-`vehikl <framework> <project-name> [--style <bootstrap|tailwind>] [--mobtime] [--docs]`
+```bash
+vehikl <framework> <project-name> [--style <bootstrap|tailwind>] [--mobtime] [--docs]
+```
 
 ### Supported Frameworks
-- **vue**
-- **vue-ts**
-- **react**
-- **react-ts**
-- **laravel**
+- **vue** - Vue.js framework
+- **vue-ts** - Vue.js with TypeScript
+- **react** - React framework
+- **react-ts** - React with TypeScript
+- **laravel** - Laravel framework
+- The following come default with Tailwind and have no option to set style:
+  - **breeze** - Laravel Breeze
+  - **livewire** - Laravel Livewire
+  - **livewire-functional** - Laravel Livewire Functional
+  - **inertia-react** - Inertia.js with React
+  - **inertia-vue** - Inertia.js with Vue
 
 ### Styles
-- **bootstrap**
-- **tailwind**
+- **bootstrap** - Bootstrap styling
+- **tailwind** - Tailwind CSS styling
 
 ### Options
-- `--mobtime`: Open the Mobtime URL for the project name.
-- `--docs`: Open the documentation for the selected framework and style.
+- `--mobtime` - Open Mobtime URL for the project
+- `--docs` - Open documentation for the selected framework and style
+- `--help` - Display this help message
+- `--list` - List supported frameworks
 
 ### Examples
-`vehikl vue-ts my-vue-project –style bootstrap –mobtime`
-
-`vehikl react my-react-project –docs`
+```bash
+vehikl vue-ts my-vue-project --style bootstrap --mobtime
+vehikl react my-react-project --docs
+vehikl laravel my-laravel-app --help
+vehikl inertia-react my-inertia-app
+```
 
 ## Functionality
 
