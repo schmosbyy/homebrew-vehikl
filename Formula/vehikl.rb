@@ -3,7 +3,7 @@ class Vehikl < Formula
   homepage "https://github.com/schmosbyy/homebrew-vehikl"
   url "https://github.com/schmosbyy/homebrew-vehikl/archive/refs/tags/v2.0.tar.gz"
   sha256 "b42ae2b07f3f8cbd80629f8d10ec569c6df1a15b28d223ab2c6109c1d6b4a984"
-  version "1.0"
+  version "2.0"
 
   def install
       bin.install "Formula/vehikl.sh" => "vehikl"
