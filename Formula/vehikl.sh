@@ -16,8 +16,8 @@ vehikl() {
         [breeze]="https://laravel.com/docs/breeze"
         [livewire]="https://laravel.com/docs/livewire"
         [livewire-functional]="https://laravel.com/docs/livewire#functional-components"
-        [inertia-react]="https://inertiajs.com/react"
-        [inertia-vue]="https://inertiajs.com/vue"
+        [inertia-react]="https://inertiajs.com/pages"
+        [inertia-vue]="https://inertiajs.com/pages"
     )
 
     declare -A style_docs_map=(
@@ -466,10 +466,9 @@ laravel({
         fi
 
         validate_input || return 1
-        handle_docs_and_mobtime
-
         # Pass remaining arguments to parse_options
         parse_options "${@}"  # Pass all arguments starting from the third one
+        handle_docs_and_mobtime
 
         if [[ "$framework" == vue* ]] || [[ "$framework" == react* ]]; then
             initialize_project
