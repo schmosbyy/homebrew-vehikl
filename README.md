@@ -8,7 +8,7 @@ You can install the `vehikl` function via Homebrew:
 
 ```bash
 brew tap schmosbyy/vehikl
-brew install schmosbyy/vehikl/vehikl
+brew install schmosbyy/vehikl
 ```
 
 ### Upgrading to a Newer Version
